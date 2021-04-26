@@ -63,6 +63,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45ec3371-cfa6-4f5d-8e41-6103cd10efe8/deploy-status)](https://app.netlify.com/sites/bitecope123/deploys)
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
