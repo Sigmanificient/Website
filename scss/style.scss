@@ -19,3 +19,53 @@ body {
   background-color: var(--color-bg);
 }
 
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+
+  & .logo {
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 82px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+
+  & .small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+
+  &.number_circle {
+    font-family: 'Organik', fantasy;
+    font-weight: 400;
+    font-size: 103px;
+  }
+}
+
+
+
