@@ -1,12 +1,21 @@
 :root {
   --color-bg: #fcfcfc;
   --text-color: #0f0f0f;
-
   --action-color: #fe7624;
   --action-color-2: #205eff;
+}
+
+@font-face {
+  font-family: 'Organik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Organik.otf') format('otf');
+  unicode-range: U+0000-00FF;
 }
 
 body {
   margin: 0;
   background-color: var(--color-bg);
 }
+
