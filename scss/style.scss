@@ -129,3 +129,12 @@ a.logo {
     width: 100%;
   }
 }
+
+.perks {
+  text-align: center;
+
+  .top, .bottom {
+    display: flex;
+  }
+}
+
