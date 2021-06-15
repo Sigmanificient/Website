@@ -21,15 +21,11 @@ body {
 }
 
 a {
+  color: inherit;
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 29px;
-
-  & .logo {
-    font-family: 'Righteous', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-  }
 }
 
 h1 {
@@ -69,4 +65,40 @@ p {
 }
 
 
+.header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  box-shadow: 0 1px 10px 0 #000;
+  backdrop-filter: blur(15px);
+
+  &--container {
+    margin: 0 auto;
+    width: clamp(320px, 80%, 1240px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+a.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Righteous', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+
+  .nav--link {
+    padding: 20px 10px;
+  }
+}
