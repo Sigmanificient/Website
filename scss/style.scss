@@ -1,6 +1,10 @@
 :root {
   scroll-behavior: smooth;
-  --color-bg: #fcfcfc;
+
+  --color-bg: #fff;
+  --text-color-white: #fcfcfc;
+  --dev-color: #f2f2f2;
+
   --text-color: #0f0f0f;
   --action-color: #fe7624;
   --action-color-2: #205eff;
@@ -245,7 +249,7 @@ a.logo {
   }
 
   p.number_circle {
-    color: var(--color-bg);
+    color: var(--text-color-white);
     position: relative;
 
     &:before, &:after {
@@ -327,4 +331,9 @@ a.logo {
     height: 150px;
     resize: none;
   }
+}
+
+footer {
+  width: 100%;
+  background-color: var(--dev-color);
 }
