@@ -109,12 +109,23 @@ a.logo {
   margin: 120px auto 0;
   width: clamp(320px, 80%, 1240px);
   gap: 100px;
+}
 
-  &--landing {
+.landing {
+  display: flex;
+  gap: 20px;
+
+  .right {
+    margin: auto 0;
+  }
+}
+
+.about_us {
+  text-align: center;
+
+  .illustrations {
     display: flex;
-
-    .right {
-      margin: auto 0;
-    }
+    justify-content: space-around;
+    width: 100%;
   }
 }
