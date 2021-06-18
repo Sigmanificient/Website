@@ -87,6 +87,7 @@ p {
 .header {
   top: 0;
   width: 100%;
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: space-between;
