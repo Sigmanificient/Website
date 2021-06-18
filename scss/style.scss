@@ -126,7 +126,7 @@ a.logo {
 
 .main {
   display: grid;
-  margin: 120px auto 0;
+  margin: 120px auto;
   width: clamp(320px, 80%, 1240px);
   gap: 100px;
 }
@@ -337,7 +337,12 @@ a.logo {
 
 footer {
   background-color: var(--dev-color);
-  padding: 20px;
+
+  .container {
+    padding: 40px 0;
+    margin: 0 auto;
+    width: clamp(320px, 80%, 1240px);
+  }
 
   .list-wrapper {
     display: grid;
