@@ -78,6 +78,7 @@ p {
   font-size: 1.61em;
 
   &.number_circle {
+    padding: 10px;
     font-family: 'Organik', fantasy;
     font-weight: 400;
     font-size: 5.72em;
@@ -337,7 +338,7 @@ a.logo {
       }
 
       input#mail {
-        width: 100%;
+        width: 66%;
       }
     }
   }
@@ -346,7 +347,9 @@ a.logo {
     font-size: 1.2em;
     padding: 10px 20px;
     border: 3px solid var(--text-color);
+    transition: box-shadow 0.5s;
     border-radius: 12px;
+    box-shadow: none;
 
     &::placeholder {
       font-weight: bold;
@@ -362,6 +365,11 @@ a.logo {
       background-color: var(--action-color);
       box-shadow: 5px 5px 0 0 var(--text-color);
       padding: 10px 40px;
+    }
+
+    &:focus, &:focus-within {
+      outline: 0;
+      box-shadow: 5px 5px 0 0 var(--action-color);
     }
   }
 
@@ -430,7 +438,7 @@ footer {
     flex-direction: row;
   }
 
-  .contact {
+  .contact-us .contact {
     flex-direction: row;
   }
 }

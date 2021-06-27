@@ -72,6 +72,7 @@ p {
   font-size: 1.61em;
 }
 p.number_circle {
+  padding: 10px;
   font-family: "Organik", fantasy;
   font-weight: 400;
   font-size: 5.72em;
@@ -276,13 +277,15 @@ a.logo img {
   width: 33%;
 }
 .contact-us form .form-identity input#mail {
-  width: 100%;
+  width: 66%;
 }
 .contact-us input, .contact-us textarea {
   font-size: 1.2em;
   padding: 10px 20px;
   border: 3px solid var(--text-color);
+  transition: box-shadow 0.5s;
   border-radius: 12px;
+  box-shadow: none;
 }
 .contact-us input::placeholder, .contact-us textarea::placeholder {
   font-weight: bold;
@@ -297,6 +300,10 @@ a.logo img {
   background-color: var(--action-color);
   box-shadow: 5px 5px 0 0 var(--text-color);
   padding: 10px 40px;
+}
+.contact-us input:focus, .contact-us input:focus-within, .contact-us textarea:focus, .contact-us textarea:focus-within {
+  outline: 0;
+  box-shadow: 5px 5px 0 0 var(--action-color);
 }
 .contact-us textarea {
   height: 150px;
@@ -354,7 +361,7 @@ footer img, footer p {
     flex-direction: row;
   }
 
-  .contact {
+  .contact-us .contact {
     flex-direction: row;
   }
 }
