@@ -20,14 +20,6 @@
   background: var(--text-color);
 }
 
-@font-face {
-  font-family: "Organik";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/Organik.otf") format("otf");
-  unicode-range: U+0000-00FF;
-}
 body {
   margin: 0;
   background-color: var(--color-bg);
@@ -73,9 +65,9 @@ p {
 }
 p.number_circle {
   padding: 10px;
-  font-family: "Organik", fantasy;
+  font-family: "Righteous", fantasy;
   font-weight: 400;
-  font-size: 5.72em;
+  font-size: 5.8em;
 }
 
 .header {
@@ -156,59 +148,59 @@ a.logo img {
 .perks {
   text-align: center;
 }
-.perks .top .card:nth-child(1) p:before {
+.perks .card:nth-child(1) p:before {
   background: var(--action-color);
   transform: translate(-47%, -50%);
 }
-.perks .top .card:nth-child(1) p:after {
+.perks .card:nth-child(1) p:after {
   color: var(--action-color-3);
   transform: translate(-53%, -50%);
 }
-.perks .top .card:nth-child(2) p:before {
+.perks .card:nth-child(2) p:before {
   background: var(--text-color);
   transform: translate(-53%, -53%);
 }
-.perks .top .card:nth-child(2) p:after {
+.perks .card:nth-child(2) p:after {
   color: var(--action-color);
   transform: translate(-47%, -47%);
 }
-.perks .top .card:nth-child(3) p:before {
+.perks .card:nth-child(3) p:before {
   background: var(--action-color-2);
   transform: translate(-53%, -47%);
 }
-.perks .top .card:nth-child(3) p:after {
+.perks .card:nth-child(3) p:after {
   color: var(--text-color);
   transform: translate(-47%, -53%);
 }
-.perks .bottom .card:nth-child(1) p:before {
+.perks .card:nth-child(4) p:before {
   background: var(--text-color);
   transform: translate(-47%, -47%);
 }
-.perks .bottom .card:nth-child(1) p:after {
+.perks .card:nth-child(4) p:after {
   color: var(--action-color);
   transform: translate(-53%, -53%);
 }
-.perks .bottom .card:nth-child(2) p:before {
+.perks .card:nth-child(5) p:before {
   background: var(--action-color);
   transform: translate(-53%, -47%);
 }
-.perks .bottom .card:nth-child(2) p:after {
+.perks .card:nth-child(5) p:after {
   color: var(--action-color-3);
   transform: translate(-50%, -53%);
 }
-.perks .bottom .card:nth-child(3) p:before {
+.perks .card:nth-child(6) p:before {
   background: var(--action-color-2);
   transform: translate(-56%, -47%);
 }
-.perks .bottom .card:nth-child(3) p:after {
+.perks .card:nth-child(6) p:after {
   color: var(--action-color-3);
   transform: translate(-53%, -53%);
 }
-.perks .bottom .card:nth-child(4) p:before {
+.perks .card:nth-child(7) p:before {
   background: var(--action-color);
   transform: translate(-47%, -53%);
 }
-.perks .bottom .card:nth-child(4) p:after {
+.perks .card:nth-child(7) p:after {
   color: var(--action-color-3);
   transform: translate(-53%, -47%);
 }
@@ -219,9 +211,10 @@ a.logo img {
   width: 100%;
 }
 .perks p.number_circle {
-  padding: 5px;
+  padding: 0;
   color: var(--text-color-white);
   position: relative;
+  width: 100%;
 }
 .perks p.number_circle:before, .perks p.number_circle:after {
   content: "";
@@ -231,7 +224,8 @@ a.logo img {
   transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 50%;
-  width: 80%;
+  width: 90%;
+  min-width: 160px;
   max-width: 240px;
   aspect-ratio: 1/1;
 }
@@ -364,6 +358,19 @@ footer img, footer p {
   .contact-us .contact {
     flex-direction: row;
   }
+}
+.perks-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.perks-wrapper .card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
