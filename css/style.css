@@ -45,7 +45,7 @@ a {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 4.55em;
+  font-size: 4.4em;
 }
 
 h2 {
@@ -118,18 +118,6 @@ a.logo img {
   width: 40px;
 }
 
-@media (min-width: 920px) {
-  #hamburger {
-    display: none;
-  }
-
-  .nav {
-    display: flex;
-  }
-  .nav .nav--link {
-    padding: 10px 20px;
-  }
-}
 .main {
   display: grid;
   margin: 120px auto;
@@ -138,10 +126,14 @@ a.logo img {
 }
 
 .landing {
+  flex-direction: column;
   display: flex;
   gap: 20px;
 }
 .landing .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto 0;
 }
 .landing .right img {
@@ -226,6 +218,7 @@ a.logo img {
   width: 100%;
 }
 .perks p.number_circle {
+  padding: 5px;
   color: var(--text-color-white);
   position: relative;
 }
@@ -237,8 +230,9 @@ a.logo img {
   transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 50%;
-  height: 210px;
-  width: 210px;
+  width: 80%;
+  max-width: 240px;
+  aspect-ratio: 1/1;
 }
 .perks p.number_circle:after {
   border: 5px solid;
@@ -330,6 +324,23 @@ footer .dev-name {
 footer img, footer p {
   border-radius: 32px;
   border: 4px solid var(--text-color);
+}
+
+@media (min-width: 920px) {
+  #hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+  .nav .nav--link {
+    padding: 10px 20px;
+  }
+
+  .landing {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

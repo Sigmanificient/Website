@@ -50,7 +50,7 @@ a {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 4.55em;
+  font-size: 4.4em;
 }
 
 h2 {
@@ -129,21 +129,6 @@ a.logo {
   width: 40px;
 }
 
-
-@media (min-width: 920px) {
-  #hamburger {
-    display: none;
-  }
-
-  .nav {
-    display: flex;
-
-    .nav--link {
-      padding: 10px 20px;
-    }
-  }
-}
-
 .main {
   display: grid;
   margin: 120px auto;
@@ -152,10 +137,14 @@ a.logo {
 }
 
 .landing {
+  flex-direction: column;
   display: flex;
   gap: 20px;
 
   .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto 0;
 
     img {
@@ -278,6 +267,7 @@ a.logo {
   }
 
   p.number_circle {
+    padding: 5px;
     color: var(--text-color-white);
     position: relative;
 
@@ -291,8 +281,9 @@ a.logo {
 
       border-radius: 50%;
 
-      height: 210px;
-      width: 210px;
+      width: 80%;
+      max-width: 240px;
+      aspect-ratio: 1/1;
     }
 
     &:after {
@@ -405,5 +396,23 @@ footer {
   img, p {
     border-radius: 32px;
     border: 4px solid var(--text-color);
+  }
+}
+
+@media (min-width: 920px) {
+  #hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+
+    .nav--link {
+      padding: 10px 20px;
+    }
+  }
+
+  .landing {
+    flex-direction: row;
   }
 }
