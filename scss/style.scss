@@ -115,13 +115,32 @@ a.logo {
   font-size: 2.22em;
   padding: 20px 0;
   gap: 10px;
+
+  img {
+    width: clamp(40px, 5vw, 100px);
+  }
 }
 
 .nav {
-  display: flex;
+  display: none;
+}
 
-  .nav--link {
-    padding: 20px 10px;
+#hamburger {
+  width: 40px;
+}
+
+
+@media (min-width: 920px) {
+  #hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+
+    .nav--link {
+      padding: 10px 20px;
+    }
   }
 }
 
@@ -139,7 +158,9 @@ a.logo {
   .right {
     margin: auto 0;
 
-
+    img {
+      width: clamp(240px, 40vw, 628px);
+    }
   }
 }
 
@@ -150,6 +171,10 @@ a.logo {
     display: flex;
     justify-content: space-around;
     width: 100%;
+
+    img {
+      width: clamp(100px, 20vw, 300px);
+    }
   }
 }
 
@@ -288,6 +313,10 @@ a.logo {
   .contact {
     display: flex;
     gap: 20px;
+
+    img {
+      width: clamp(240px, 40vw, 484px);
+    }
   }
 
   form {

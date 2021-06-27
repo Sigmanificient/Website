@@ -106,14 +106,30 @@ a.logo {
   padding: 20px 0;
   gap: 10px;
 }
+a.logo img {
+  width: clamp(40px, 5vw, 100px);
+}
 
 .nav {
-  display: flex;
-}
-.nav .nav--link {
-  padding: 20px 10px;
+  display: none;
 }
 
+#hamburger {
+  width: 40px;
+}
+
+@media (min-width: 920px) {
+  #hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+  .nav .nav--link {
+    padding: 10px 20px;
+  }
+}
 .main {
   display: grid;
   margin: 120px auto;
@@ -128,6 +144,9 @@ a.logo {
 .landing .right {
   margin: auto 0;
 }
+.landing .right img {
+  width: clamp(240px, 40vw, 628px);
+}
 
 .about_us {
   text-align: center;
@@ -136,6 +155,9 @@ a.logo {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.about_us .illustrations img {
+  width: clamp(100px, 20vw, 300px);
 }
 
 .perks {
@@ -232,6 +254,9 @@ a.logo {
 .contact-us .contact {
   display: flex;
   gap: 20px;
+}
+.contact-us .contact img {
+  width: clamp(240px, 40vw, 484px);
 }
 .contact-us form {
   display: flex;
