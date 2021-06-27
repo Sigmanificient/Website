@@ -83,7 +83,7 @@ p.number_circle {
 }
 .header--container {
   margin: 0 auto;
-  width: clamp(320px, 80%, 1240px);
+  width: clamp(280px, 80%, 1240px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,6 +147,9 @@ a.logo img {
 
 .perks {
   text-align: center;
+}
+.perks .card {
+  transition: all 1s ease-in-out;
 }
 .perks .card:nth-child(1) p:before {
   background: var(--action-color);
@@ -212,6 +215,7 @@ a.logo img {
 }
 .perks p.number_circle {
   padding: 0;
+  font-weight: 800;
   color: var(--text-color-white);
   position: relative;
   width: 100%;
@@ -370,7 +374,7 @@ footer img, footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: clamp(30%, 300px, 40%);
 }
 
 /*# sourceMappingURL=style.css.map */
