@@ -303,15 +303,28 @@ a.logo {
 
   .contact {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 
     img {
       width: clamp(240px, 40vw, 484px);
     }
+
+    .left {
+      display: grid;
+      place-items: center;
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   form {
     display: flex;
+    max-width: 620px;
     flex-direction: column;
     grid-gap: 20px;
 
@@ -342,7 +355,8 @@ a.logo {
     }
 
     &[type=submit] {
-      width: 25%;
+      min-width: 25%;
+      width: max-content;
       border: 3px solid transparent;
       font-family: 'Poppins', sans-serif;
       background-color: var(--action-color);
@@ -413,6 +427,10 @@ footer {
   }
 
   .landing {
+    flex-direction: row;
+  }
+
+  .contact {
     flex-direction: row;
   }
 }

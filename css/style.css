@@ -247,13 +247,24 @@ a.logo img {
 }
 .contact-us .contact {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .contact-us .contact img {
   width: clamp(240px, 40vw, 484px);
 }
+.contact-us .contact .left {
+  display: grid;
+  place-items: center;
+}
+.contact-us .contact .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-us form {
   display: flex;
+  max-width: 620px;
   flex-direction: column;
   grid-gap: 20px;
 }
@@ -279,7 +290,8 @@ a.logo img {
   opacity: 0.25;
 }
 .contact-us input[type=submit], .contact-us textarea[type=submit] {
-  width: 25%;
+  min-width: 25%;
+  width: max-content;
   border: 3px solid transparent;
   font-family: "Poppins", sans-serif;
   background-color: var(--action-color);
@@ -339,6 +351,10 @@ footer img, footer p {
   }
 
   .landing {
+    flex-direction: row;
+  }
+
+  .contact {
     flex-direction: row;
   }
 }
