@@ -27,7 +27,7 @@
 body {
   margin: 0;
   background-color: var(--color-bg);
-  font-size: clamp(12px, 1vw, 18px);
+  font-size: clamp(10px, 1vw, 16px);
 }
 
 a {
@@ -113,7 +113,7 @@ a.logo {
   gap: 10px;
 
   img {
-    width: clamp(48px, 4.5vw, 100px);
+    width: clamp(32px, 4vw, 75px);
   }
 }
 
@@ -158,7 +158,7 @@ a.logo {
     width: 100%;
 
     img {
-      width: clamp(100px, 20vw, 300px);
+      width: clamp(90px, 20vw, 300px);
     }
   }
 }
@@ -382,7 +382,7 @@ footer {
   .container {
     padding: 40px 0;
     margin: 0 auto;
-    width: clamp(320px, 80%, 1360px);
+    width: clamp(280px, 80%, 1360px);
   }
 
   .list-wrapper {
