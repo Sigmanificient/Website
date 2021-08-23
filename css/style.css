@@ -22,11 +22,12 @@
   }
   
 .sidebar a {
+  font-size: 21px;
   display: block;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
   padding: 9px 0px 8px 14px;
-  font-family: 'Righteous','Montserrat';
+  font-family: 'Montserrat';
   text-decoration: none;
 }
 
@@ -41,14 +42,15 @@
 
 #content {
   padding: 10px 80px 10px 400px;
-  font-weight: 200;
-  font-family: 'Montserrat';
+  font-weight: 400;
+  font-family: 'Nunito','Montserrat';
   font-size: 20px;
+  color: #737373;
 }
 #title{
   font-size: 25px;
   font-weight: bold;
-  font-family: 'Righteous';
+  font-family: 'Montserrat';
   padding: 100px 80px 10px 400px;
   color: #00C9FF;
 }
