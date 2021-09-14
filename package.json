@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "![GitHub last commit](https://img.shields.io/github/last-commit/Monofyi/Website/gh-pages)",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3",
+    "querystring": "^0.2.1",
+    "netlify-cli": "^6.8.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monofyi/Website.git"
+  },
+  "author": "Vismita Prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Monofyi/Website/issues"
+  },
+  "homepage": "https://github.com/Monofyi/Website#readme"
+}
