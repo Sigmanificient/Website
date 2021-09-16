@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>
-    BiteCope - Efficient supply chain management - Realtime Updates, Completely Online, Scalable & Sustainable
+    Bitecope - Efficient supply chain management - Realtime Updates, Completely Online, Scalable & Sustainable
   </title>
   <meta name="language" content="en-IN">
   <meta name="author" content="Boniface Yohann">
@@ -42,13 +42,14 @@
   <div class="header--container">
     <a class="logo" href="#">
       <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo">
-      BiteCope
+      Bitecope
     </a>
     <nav class="nav">
       <a class="nav--link" href="#">Home</a>
       <a class="nav--link" href="#about_us">About Us</a>
       <a class="nav--link" href="#contact-us">Contact Us</a>
       <a class="nav--link" href="T&C.html">T&C</a>
+      <a class="nav--link" href="FAQ.html">FAQ</a>
       <a class="nav--link" href="PrivacyPolicy.html">Privacy Policy</a>
       <!-- <a class="nav--link" href="#developers">Developers</a> -->
     </nav>
@@ -169,7 +170,7 @@
     </section>
   </section>
 </main>
-<p style="text-align: center;font-weight: 700;">All rights reserved ©2020 by BiteCope</p>
+<p style="text-align: center;font-weight: 700;">All rights reserved ©2020 by Bitecope</p>
 <script type="text/javascript" src="mail.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
@@ -190,7 +191,7 @@
     .then(async(ok) => {
      if(ok){
        // window.location.href="/";
-       const response = await fetch('/.netlify/functions/mail', {
+       const response = await fetch('.netlify/functions/mail', {
                   method: 'POST', // *GET, POST, PUT, DELETE, etc.
                   // body: new URLSearchParams(new FormData(event.target)),
                   body:JSON.stringify({name,email,message,number}),
