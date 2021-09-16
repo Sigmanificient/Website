@@ -14,7 +14,7 @@ async function main(name,email,message,number) {
       pass: process.env.PASS, // generated ethereal password
     },
     tls: {
-      ciphers:'SSLv3',
+      ciphers:'SSLv3'
       // maxVersion: 'TLSv1.2' 
       },
   })
@@ -57,7 +57,7 @@ async function ack(name,email,message,number) {
       pass: process.env.PASS, // generated ethereal password
     },
     tls: {
-      ciphers:'SSLv3',
+      ciphers:'SSLv3'
       // maxVersion: 'TLSv1.2'
     },
   })
