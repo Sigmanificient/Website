@@ -54,6 +54,35 @@
   padding: 100px 80px 10px 400px;
   color: #00C9FF;
 }
+.Acc-Content1,.Acc-Content2{
+  font-size: 18px;
+}
+.faq{
+ margin: 100px 80px 60px 80px;
+}
+.accordion1, .accordion2 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion1:hover, .accordion2:hover{
+  background-color: #ccc;
+}
+.panel {
+  background-color: rgba(252, 247, 247, 0.863);
+  display: none;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {

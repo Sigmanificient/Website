@@ -15,6 +15,7 @@ async function main(name,email,message,number) {
     },
     tls: {
       ciphers:'SSLv3'
+      // maxVersion: 'TLSv1.2' 
       },
   })
 
@@ -57,6 +58,7 @@ async function ack(name,email,message,number) {
     },
     tls: {
       ciphers:'SSLv3'
+      // maxVersion: 'TLSv1.2'
     },
   })
 
