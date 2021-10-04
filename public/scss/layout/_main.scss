@@ -1,0 +1,25 @@
+@use "../abscracts";
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+
+  &-track {
+    background: var(--color-bg)
+  }
+
+  &-thumb {
+    background: var(--text-color);
+  }
+}
+
+body {
+  background-color: abscracts.$color-bg;
+}
+
+.main {
+  display: grid;
+  margin: 120px auto;
+  width: clamp(320px, 80%, 1360px);
+  gap: 100px;
+}
