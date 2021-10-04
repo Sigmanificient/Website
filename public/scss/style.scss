@@ -1,5 +1,6 @@
 @use "abscracts";
 @use "base";
+@use "components";
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -177,7 +178,7 @@ body {
     }
 
     &:after {
-      color: abscracts.$action-color;
+      color: abscracts.$action-color-3;
       transform: translate(-53%, -47%);
     }
   }
