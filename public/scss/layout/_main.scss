@@ -23,3 +23,9 @@ body {
   width: clamp(320px, 80%, 1360px);
   gap: 100px;
 }
+
+#about_us,
+#contact-us,
+#developers {
+  scroll-margin-top: 60px;
+}
