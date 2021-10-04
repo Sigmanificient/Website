@@ -1,14 +1,7 @@
+@use "abscracts";
+
 :root {
   scroll-behavior: smooth;
-
-  --color-bg: #fff;
-  --text-color-white: #fcfcfc;
-  --dev-color: #f2f2f2;
-
-  --text-color: #0f0f0f;
-  --action-color: #fe7624;
-  --action-color-2: #205eff;
-  --action-color-3: #5d21d1;
 }
 
 ::-webkit-scrollbar {
@@ -91,7 +84,7 @@
 
 body {
   margin: 0;
-  background-color: var(--color-bg);
+  background-color: abscracts.$color-bg;
   font-size: clamp(10px, 1vw, 16px);
 }
 
@@ -147,7 +140,7 @@ p {
 
 h1, h2, h3, p, a, img, textarea, input {
   &::selection {
-    background-color: var(--action-color);
+    background-color: abscracts.$action-color;
   }
 }
 
@@ -280,84 +273,84 @@ a.logo {
   .card:nth-child(1) p {
 
     &:before {
-      background: var(--action-color);
+      background: abscracts.$action-color;
       transform: translate(-47%, -50%);
     }
 
     &:after {
-      color: var(--action-color-3);
+      color: abscracts.$action-color-3;
       transform: translate(-53%, -50%);
     }
   }
 
   .card:nth-child(2) p {
     &:before {
-      background: var(--text-color);
+      background: abscracts.$text-color;
       transform: translate(-53%, -53%);
     }
 
     &:after {
-      color: var(--action-color);
+      color: abscracts.$action-color;
       transform: translate(-47%, -47%);
     }
   }
 
   .card:nth-child(3) p {
     &:before {
-      background: var(--action-color-2);
+      background: abscracts.$action-color-2;
       transform: translate(-53%, -47%);
     }
 
     &:after {
-      color: var(--text-color);
+      color: abscracts.$text-color;
       transform: translate(-47%, -53%);
     }
   }
 
   .card:nth-child(4) p {
     &:before {
-      background: var(--text-color);
+      background: abscracts.$text-color;
       transform: translate(-47%, -47%);
     }
 
     &:after {
-      color: var(--action-color);
+      color: abscracts.$action-color;
       transform: translate(-53%, -53%);
     }
   }
 
   .card:nth-child(5) p {
     &:before {
-      background: var(--action-color);
+      background: abscracts.$action-color;
       transform: translate(-53%, -47%);
     }
 
     &:after {
-      color: var(--action-color-3);
+      color: abscracts.$action-color-3;
       transform: translate(-50%, -53%);
     }
   }
 
   .card:nth-child(6) p {
     &:before {
-      background: var(--action-color-2);
+      background: abscracts.$action-color-2;
       transform: translate(-56%, -47%);
     }
 
     &:after {
-      color: var(--action-color-3);
+      color: abscracts.$action-color-3;
       transform: translate(-53%, -53%);
     }
   }
 
   .card:nth-child(7) p {
     &:before {
-      background: var(--action-color);
+      background: abscracts.$action-color;
       transform: translate(-47%, -53%);
     }
 
     &:after {
-      color: var(--action-color-3);
+      color: abscracts.$action-color;
       transform: translate(-53%, -47%);
     }
   }
@@ -366,7 +359,7 @@ a.logo {
     padding: 0;
     user-select: none;
     font-weight: 800;
-    color: var(--text-color-white);
+    color: abscracts.$text-color-white;
     position: relative;
     width: 100%;
 
@@ -463,14 +456,14 @@ a.logo {
       width: max-content;
       border: 3px solid transparent;
       font-family: 'Poppins', sans-serif;
-      background-color: var(--action-color);
-      box-shadow: 5px 5px 0 0 var(--text-color);
+      background-color: abscracts.$action-color;
+      box-shadow: 5px 5px 0 0 abscracts.$text-color;
       padding: 10px 40px;
     }
 
     &:focus, &:focus-within {
       outline: 0;
-      box-shadow: 5px 5px 0 0 var(--action-color);
+      box-shadow: 5px 5px 0 0 abscracts.$action-color;
     }
   }
 
@@ -482,7 +475,7 @@ a.logo {
 
 
 footer {
-  background-color: var(--dev-color);
+  background-color: abscracts.$dev-color;
 
   .container {
     padding: 40px 0;
@@ -525,7 +518,7 @@ footer {
 
   img, p {
     border-radius: 32px;
-    border: 4px solid var(--text-color);
+    border: 4px solid abscracts.$text-color;
   }
 }
 
