@@ -58,7 +58,12 @@ p {
   }
 }
 
-h1, h2, h3, p, a, img, textarea, input {
+ol {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, p, a, img, textarea, input, ol {
   &::selection {
     background-color: abscracts.$action-color;
   }
