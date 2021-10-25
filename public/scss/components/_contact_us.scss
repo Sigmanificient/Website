@@ -1,0 +1,78 @@
+@use "../abscracts";
+
+.contact-us {
+  text-align: center;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+      width: clamp(240px, 40vw, 484px);
+    }
+
+    .left {
+      display: grid;
+      place-items: center;
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  form {
+    padding: 20px;
+    display: flex;
+    max-width: 620px;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    .form-identity {
+      display: flex;
+      grid-gap: 26px;
+
+      input#name {
+        width: 33%;
+      }
+
+      input#mail {
+        width: 66%;
+      }
+    }
+  }
+
+  input, textarea {
+    padding: 10px 20px;
+    border: 3px solid abscracts.$text-color;
+    transition: box-shadow 0.5s;
+    border-radius: 12px;
+    box-shadow: none;
+
+    &::placeholder {
+      opacity: 0.25;
+    }
+
+    &[type=submit] {
+      min-width: 25%;
+      width: max-content;
+      border: 3px solid transparent;
+      font-family: 'Poppins', sans-serif;
+      background-color: abscracts.$action-color;
+      box-shadow: 5px 5px 0 0 abscracts.$text-color;
+      padding: 10px 40px;
+    }
+
+    &:focus, &:focus-within {
+      outline: 0;
+      box-shadow: 5px 5px 0 0 abscracts.$action-color;
+    }
+  }
+
+  textarea {
+    height: 150px;
+  }
+}

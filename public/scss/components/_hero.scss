@@ -1,0 +1,31 @@
+@use "../abscracts";
+
+.landing {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+
+  .left {
+    h1 {
+      animation: SlideLeft 1s cubic-bezier(0.42, 0, 0.12, 1.34) forwards;
+      opacity: 0;
+    }
+
+    p {
+      animation: SlideLeft 1s cubic-bezier(0.42, 0, 0.12, 1.34) 0.2s forwards;
+      opacity: 0;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+
+    img {
+      animation: SlideRightImg 1s cubic-bezier(0.42, 0, 0.12, 1.34) 0.2s forwards;
+      width: clamp(240px, 40vw, 628px);
+    }
+  }
+}

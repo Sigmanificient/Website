@@ -1,0 +1,40 @@
+@use "../abscracts";
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+
+  &-track {
+    background: var(--color-bg)
+  }
+
+  &-thumb {
+    background: var(--text-color);
+  }
+}
+
+body {
+  background-color: abscracts.$color-bg;
+}
+
+.main {
+  display: grid;
+  margin: 120px auto;
+  width: clamp(320px, 80%, 1360px);
+  gap: 100px;
+
+  &-animate {
+    opacity: 0;
+    animation: SlideLeft 1s cubic-bezier(0.42, 0, 0.12, 1.34) 0.2s forwards;
+
+    & p {
+      animation: SlideLeft 1.5s cubic-bezier(0.42, 0, 0.12, 1.34) 0.2s forwards;
+    }
+  }
+}
+
+#about_us,
+#contact-us,
+#developers {
+  scroll-margin-top: 60px;
+}

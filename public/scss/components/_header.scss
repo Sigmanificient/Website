@@ -1,0 +1,45 @@
+@use "../abscracts";
+
+.header {
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 1px 10px 0 #000;
+  background-color: rgba(abscracts.$color-bg, 80%);
+
+  &--container {
+    margin: 0 auto;
+    width: clamp(280px, 80%, 1360px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+a.logo {
+  display: flex;
+  align-items: center;
+  animation: Fade 1s ease-in-out;
+  padding: 10px 0;
+  gap: 10px;
+
+  img {
+    animation: Spin .5s cubic-bezier(0.42, 0, 0.12, 1.34);
+    width: clamp(32px, 4vw, 75px);
+  }
+}
+
+.nav {
+  animation: SlideLeft 1s cubic-bezier(0.42, 0, 0.12, 1.34);
+  display: none;
+}
+
+#hamburger {
+  width: 40px;
+}

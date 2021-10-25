@@ -1,0 +1,64 @@
+@keyframes Spacing {
+  0% {
+    letter-spacing: 2px;
+    opacity: 0;
+  }
+
+  50% {
+    letter-spacing: 5px;
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: 0;
+  }
+}
+
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes SlideRightImg {
+  0% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideDown {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
