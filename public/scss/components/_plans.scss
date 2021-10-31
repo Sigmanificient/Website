@@ -3,8 +3,19 @@
   gap: 60px;
 
   &-container {
+    display: grid;
+    place-items: center;
+
     width: 100%;
     box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
     padding: 20px;
+  }
+
+  .benefits {
+    padding: 20px 0;
+  }
+
+  .benefit > img {
+    height: 20px;
   }
 }
