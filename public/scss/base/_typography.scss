@@ -56,6 +56,11 @@ p {
     font-size: 5.8em;
     font-weight: 800;
   }
+
+  &.ultra-big {
+    text-align: center;
+    font-size: 3em;
+  }
 }
 
 h1, h2, h3, p, a, img, textarea, input {
