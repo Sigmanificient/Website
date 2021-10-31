@@ -36,7 +36,6 @@
     <link rel="icon" type="image/x-icon" href="svg/logo/logo__no_bg.svg">
 </head>
 <body>
-
 <header class="header">
     <div class="header--container">
         <a class="logo" href="#">
@@ -57,65 +56,75 @@
         </a>
     </div>
 </header>
-
 <main class="main">
-    <p class="ultra-big">Our <strong>plans</strong> for your <strong>strategies.</strong></p>
-
-    <div class="plans">
-        <div class="plans-container" id="monthly">
-            <p class="price"><strong>1499</strong><sub>/month</sub></p>
-
-            <p class="time_range">Monthly</p>
-            <p class="description">All the basic for the business that are growing.</p>
-
-            <div class="benefits">
-                <p class="benefit">
-                    <img src="svg/blue_check.svg" alt="+">
-                    Upto 5 worker accounts.
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <section class="contact">
+            <section class="left">
+                <p>
+                    If you wish to know more or purchase our products, please leave your details here. Our team will
+                    assist you further.
                 </p>
-                <p class="benefit">
-                    <img src="svg/blue_check.svg" alt="+">
-                    24 X 7 support for 30 days.
-                </p>
-            </div>
-            <a class="btn btn-blue" href="Contact-us.html">Select</a>
-        </div>
-        <div class="plans-container" id="annually">
-            <p class="price"><strong>14999</strong><sub>/year</sub></p>
-
-            <p class="time_range">Annually</p>
-            <p class="description">All the basic for the business that are growing.</p>
-
-            <div class="benefits">
-                <p class="benefit">
-                    <img src="svg/blue_check.svg" alt="+">
-                    Upto 5 worker accounts.
-                </p>
-                <p class="benefit">
-                    <img src="svg/blue_check.svg" alt="+">
-                    24 X 7 support for 30 days.
-                </p>
-                <p class="benefit">
-                    <img src="svg/orange_check.svg" alt="+">
-                    Save 3000 INR.
-                </p>
-            </div>
-            <a class="btn btn-orange" href="Contact-us.html">Select</a>
-        </div>
-        <div class="plans-container" id="enterprise">
-            <p class="price"><strong>Custom</strong></p>
-
-            <p class="time_range">Enterprise</p>
-
-            <div class="descriptions">
-                <p class="description">Need more than 5 worker accounts?</p>
-
-                <p><b>or</b></p>
-                <p class="description">Want a dedicated support & training team ?</p>
-            </div>
-            <a class="btn" href="Contact-us.html">Contact</a>
-        </div>
-    </div>
+                <form id="form">
+                    <section class="form-identity">
+                        <input id="name" type="text" placeholder="Name" required name="name">
+                        <input id="mail" type="text" placeholder="Email Address" required name="mail">
+                        <input id="number" type="text" placeholder="Contact Number" required name="number"
+                               maxlength="10">
+                    </section>
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </section>
+            <section class="right">
+                <img src="svg/illustrations/5.svg" alt="">
+            </section>
+        </section>
+    </section>
 </main>
+<footer>
+    <p>
+        All rights reserved ©2020 by Bitecope
+    </p>
+</footer>
+<script type="text/javascript" src="functions/mail.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    document.getElementById("form").addEventListener('submit', function (event) {
+
+        // const nodemailer = require("nodemailer");
+        let name = document.getElementById("name").value;
+        let message = document.getElementById("message").value;
+        let email = document.getElementById("mail").value;
+        let number = document.getElementById("number").value
+
+        event.preventDefault();
+
+        swal(
+                {
+                    title: "Details submitted successfully!",
+                    text: "We will get back to you soon",
+                    icon: "success",
+                }
+        ).then(
+                async (ok) => {
+                    if (ok) {
+                        // window.location.href="/";
+                        const response = await fetch('.netlify/functions/mail', {
+                            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                            // body: new URLSearchParams(new FormData(event.target)),
+                            body: JSON.stringify({name, email, message, number}),
+                            headers: {
+                                'Content-Type': 'application/JSON',
+                                //  x-www-form-urlencoded
+                            }
+                        });
+                        document.forms[0].reset();
+                    }
+                }
+        )
+    });
+
+</script>
 </body>
 </html>
