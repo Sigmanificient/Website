@@ -1,5 +1,10 @@
 .plans {
   display: flex;
+
+  @media (max-width: 1200px) {
+    flex-flow: row wrap;
+  }
+
   gap: 60px;
 
   &-container {
@@ -7,7 +12,6 @@
     flex-direction: column;
     place-items: center;
     justify-content: space-between;
-
     width: 100%;
     box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
     padding: 40px 40px 80px;
@@ -49,6 +53,7 @@
   }
 
   .description {
+    width: 100%;
     color: #AEAEAE;
   }
 }
