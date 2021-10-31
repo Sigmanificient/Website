@@ -3,19 +3,52 @@
   gap: 60px;
 
   &-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
+    justify-content: space-between;
 
     width: 100%;
     box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
-    padding: 20px;
+    padding: 40px 40px 80px;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 
-  .benefits {
+  .benefits, .descriptions {
+    display: grid;
     padding: 20px 0;
+    width: 100%;
+    margin-bottom: 80px;
+    gap: 20px;
   }
 
   .benefit > img {
     height: 20px;
+  }
+
+  .price {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+
+    strong {
+      font-weight: bold;
+      font-size: 2em;
+    }
+  }
+
+  .time_range {
+    font-size: 2em;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .description {
+    color: #AEAEAE;
   }
 }

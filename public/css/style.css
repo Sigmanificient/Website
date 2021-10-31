@@ -168,6 +168,19 @@ input::placeholder, textarea::placeholder {
   animation: SlideDown 1s cubic-bezier(0.42, 0, 0.12, 1.34) 0.5s forwards;
 }
 
+.btn {
+  padding: 10px 60px;
+  border-radius: 50px;
+  background: black;
+  color: white;
+}
+.btn-blue {
+  background: linear-gradient(89.61deg, #2CCEFF 0.39%, #30AAFF 0.4%, #30AAFF 2.09%, #30ABFF 2.1%, #30ACFF 4.22%, #30ADFF 6.78%, #31B5FF 22.52%, #31B9FF 31.03%, #32C3FF 51.87%, #32C6FF 57.83%, #33C9FF 69.32%, #33CDFF 77.4%, #33CEFF 82.07%, #33CEFF 82.07%, #33CFFF 82.08%);
+}
+.btn-orange {
+  background: linear-gradient(90deg, #F15A24 0%, #F68F1F 98.29%);
+}
+
 .contact-us {
   text-align: center;
 }
@@ -446,9 +459,45 @@ a.logo img {
   gap: 60px;
 }
 .plans-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
   width: 100%;
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
-  padding: 20px;
+  padding: 40px 40px 80px;
+}
+.plans-container p {
+  margin: 0;
+  padding: 0;
+}
+.plans .benefits, .plans .descriptions {
+  display: grid;
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+.plans .benefit > img {
+  height: 20px;
+}
+.plans .price {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.plans .price strong {
+  font-weight: bold;
+  font-size: 2em;
+}
+.plans .time_range {
+  font-size: 2em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.plans .description {
+  color: #AEAEAE;
 }
 
 ::-webkit-scrollbar {
