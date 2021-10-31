@@ -458,6 +458,11 @@ a.logo img {
   display: flex;
   gap: 60px;
 }
+@media (max-width: 1200px) {
+  .plans {
+    flex-flow: row wrap;
+  }
+}
 .plans-container {
   display: flex;
   flex-direction: column;
@@ -497,6 +502,7 @@ a.logo img {
   margin-bottom: 40px;
 }
 .plans .description {
+  width: 100%;
   color: #AEAEAE;
 }
 
