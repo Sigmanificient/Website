@@ -126,6 +126,10 @@ p.number_circle {
   font-size: 5.8em;
   font-weight: 800;
 }
+p.ultra-big {
+  text-align: center;
+  font-size: 3em;
+}
 
 h1::selection, h2::selection, h3::selection, p::selection, a::selection, img::selection, textarea::selection, input::selection {
   background-color: #fe7624;
