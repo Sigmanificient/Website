@@ -297,6 +297,14 @@ a.logo img {
   position: relative;
   z-index: 1;
 }
+@media (min-width: 920px) {
+  .nav#menu {
+    display: block;
+  }
+  .nav#menu #closer {
+    display: none;
+  }
+}
 @media (max-width: 920px) {
   .nav#menu {
     animation: SlideRight 1s cubic-bezier(0.42, 0, 0.12, 1.34);
@@ -320,12 +328,16 @@ a.logo img {
   }
   .nav#menu img {
     height: 24px;
+    user-select: none;
+    cursor: pointer;
   }
 }
 
 #hamburger {
   width: 40px;
   z-index: 1;
+  user-select: none;
+  cursor: pointer;
 }
 #hamburger.open img {
   transition: all 0.3s ease-in-out;
