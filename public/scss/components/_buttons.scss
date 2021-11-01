@@ -1,14 +1,30 @@
+@use "../abscracts";
+
 .btn {
   padding: 10px 60px;
   border-radius: 50px;
   background: black;
   color: white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 0 0 rgba(abscracts.$text-color, 75%);
+  }
 
   &-blue {
     background: linear-gradient(89.61deg, #2CCEFF 0.39%, #30AAFF 0.4%, #30AAFF 2.09%, #30ABFF 2.1%, #30ACFF 4.22%, #30ADFF 6.78%, #31B5FF 22.52%, #31B9FF 31.03%, #32C3FF 51.87%, #32C6FF 57.83%, #33C9FF 69.32%, #33CDFF 77.4%, #33CEFF 82.07%, #33CEFF 82.07%, #33CFFF 82.08%);
+
+    &:hover {
+      box-shadow: 0 3px 0 0 rgba(#2CCEFF, 75%);
+    }
   }
 
   &-orange {
     background: linear-gradient(90deg, #F15A24 0%, #F68F1F 98.29%);
+
+    &:hover {
+      box-shadow: 0 3px 0 0 rgba(#F68F1F, 75%);
+    }
   }
 }
