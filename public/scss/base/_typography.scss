@@ -56,6 +56,12 @@ p {
     font-size: 5.8em;
     font-weight: 800;
   }
+
+  &.ultra-big {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+  }
 }
 
 ol {

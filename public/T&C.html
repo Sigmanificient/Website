@@ -38,22 +38,33 @@
 <body>
 <header class="header">
     <div class="header--container">
-        <a class="logo" href="index.html">
-            <img src="svg/logo/logo__no_bg.svg" alt="Bitecope Startup logo">
+        <a class="logo" href="#">
+            <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo">
             Bitecope
         </a>
-        <nav class="nav">
-            <a class="nav--link" href="index.html">Home</a>
+
+        <a class="nav--link" href="index.html#">Home</a>
+        <a class="nav--link" href="subscription.html">Subscription</a>
+        <a class="nav--link" href="Contact-us.html">Contact Us</a>
+
+        <nav id="menu" class="nav">
+            <img id="closer" src="svg/cross-button.svg" alt="Close">
+
+            <a class="nav--link responsive-nav" href="index.html#">Home</a>
+            <a class="nav--link responsive-nav" href="subscription.html">Subscription</a>
+            <a class="nav--link responsive-nav" href="Contact-us.html">Contact Us</a>
+
             <a class="nav--link" href="index.html#about_us">About Us</a>
-            <a class="nav--link" href="index.html#contact-us">Contact Us</a>
-            <a class="nav--link" href="#">T&C</a>
+            <a class="nav--link" href="T&C.html">T&C</a>
             <a class="nav--link" href="FAQ.html">FAQ</a>
             <a class="nav--link" href="PrivacyPolicy.html">Privacy Policy</a>
         </nav>
 
-        <a id="hamburger" href="#" class="hamburger">
+        <a id="hamburger" class="hamburger">
             <img src="svg/button_hamburger.svg" alt="+">
         </a>
+
+        <script src="/functions/hamburger.js"></script>
     </div>
 </header>
 <main class="main animate">

@@ -42,18 +42,29 @@
             <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo">
             Bitecope
         </a>
-        <nav class="nav">
-            <a class="nav--link" href="#">Home</a>
-            <a class="nav--link" href="#about_us">About Us</a>
-            <a class="nav--link" href="#contact-us">Contact Us</a>
+
+        <a class="nav--link" href="index.html#">Home</a>
+        <a class="nav--link" href="subscription.html">Subscription</a>
+        <a class="nav--link" href="Contact-us.html">Contact Us</a>
+
+        <nav id="menu" class="nav">
+            <img id="closer" src="svg/cross-button.svg" alt="Close">
+
+            <a class="nav--link responsive-nav" href="index.html#">Home</a>
+            <a class="nav--link responsive-nav" href="subscription.html">Subscription</a>
+            <a class="nav--link responsive-nav" href="Contact-us.html">Contact Us</a>
+
+            <a class="nav--link" href="index.html#about_us">About Us</a>
             <a class="nav--link" href="T&C.html">T&C</a>
             <a class="nav--link" href="FAQ.html">FAQ</a>
             <a class="nav--link" href="PrivacyPolicy.html">Privacy Policy</a>
         </nav>
 
-        <a id="hamburger" href="#" class="hamburger">
+        <a id="hamburger" class="hamburger">
             <img src="svg/button_hamburger.svg" alt="+">
         </a>
+
+        <script src="/functions/hamburger.js"></script>
     </div>
 </header>
 <main class="main">
@@ -156,74 +167,11 @@
             </figcaption>
         </figure>
     </section>
-    <section id="contact-us" class="contact-us">
-        <h2>Contact Us</h2>
-        <section class="contact">
-            <section class="left">
-                <p>
-                    If you wish to know more or purchase our products, please leave your details here. Our team will
-                    assist you further.
-                </p>
-                <form id="form">
-                    <section class="form-identity">
-                        <input id="name" type="text" placeholder="Name" required name="name">
-                        <input id="mail" type="text" placeholder="Email Address" required name="mail">
-                        <input id="number" type="text" placeholder="Contact Number" required name="number"
-                               maxlength="10">
-                    </section>
-                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                    <input class="btn" type="submit" value="Submit">
-                </form>
-            </section>
-            <section class="right">
-                <img src="svg/illustrations/5.svg" alt="">
-            </section>
-        </section>
-    </section>
 </main>
 <footer>
     <p>
         All rights reserved ©2020 by Bitecope
     </p>
 </footer>
-<script type="text/javascript" src="functions/mail.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    document.getElementById("form").addEventListener('submit', function (event) {
-
-        // const nodemailer = require("nodemailer");
-        let name = document.getElementById("name").value;
-        let message = document.getElementById("message").value;
-        let email = document.getElementById("mail").value;
-        let number = document.getElementById("number").value
-
-        event.preventDefault();
-
-        swal(
-                {
-                    title: "Details submitted successfully!",
-                    text: "We will get back to you soon",
-                    icon: "success",
-                }
-        ).then(
-                async (ok) => {
-                    if (ok) {
-                        // window.location.href="/";
-                        const response = await fetch('.netlify/functions/mail', {
-                            method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                            // body: new URLSearchParams(new FormData(event.target)),
-                            body: JSON.stringify({name, email, message, number}),
-                            headers: {
-                                'Content-Type': 'application/JSON',
-                                //  x-www-form-urlencoded
-                            }
-                        });
-                        document.forms[0].reset();
-                    }
-                }
-        )
-    });
-
-</script>
 </body>
 </html>
