@@ -49,7 +49,7 @@
 
         <nav id="menu" class="nav">
             <img id="closer" src="svg/cross-button.svg" alt="Close">
-            
+
             <a class="nav--link responsive-nav" href="index.html#">Home</a>
             <a class="nav--link responsive-nav" href="subscription.html">Subscription</a>
             <a class="nav--link responsive-nav" href="Contact-us.html">Contact Us</a>
@@ -64,24 +64,7 @@
             <img src="svg/button_hamburger.svg" alt="+">
         </a>
 
-        <script>
-            window.onload = function() {
-                let hamburger = document.getElementById("hamburger")
-                let menu = document.getElementById("menu")
-                let closer = document.getElementById("closer")
-
-                hamburger.onclick = function() {
-                    hamburger.classList.add('open')
-                    menu.classList.add('open')
-                }
-
-
-                closer.onclick = function() {
-                    hamburger.classList.remove('open')
-                    menu.classList.remove('open')
-                }
-            }
-        </script>
+        <script src="/functions/hamburger.js"></script>
     </div>
 </header>
 <main class="main">
