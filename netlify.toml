@@ -1,8 +1,6 @@
 [build]
-    command = "yarn run build"
-    publish = "build/"
-    functions = "functions/"
-
+    base = "/"
+    publish = "public/"
 [[redirects]]
     from = "/*"
     to = "/index.html"
