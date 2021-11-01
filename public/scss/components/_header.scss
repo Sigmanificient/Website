@@ -35,11 +35,47 @@ a.logo {
   }
 }
 
-.nav {
+.nav#menu {
   animation: SlideLeft 1s cubic-bezier(0.42, 0, 0.12, 1.34);
   display: none;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 920px) {
+    animation: SlideRight 1s cubic-bezier(0.42, 0, 0.12, 1.34);
+
+    &.open {
+      z-index: 3;
+      background-color: white;
+      padding: 60px 40px;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      gap: 40px;
+      height: 100vh;
+      position: absolute;
+      box-shadow: 2px 2px 5px 0 abscracts.$text-color;
+
+      a {
+        text-align: right;
+      }
+    }
+
+    img {
+      height: 24px;
+    }
+  }
 }
 
 #hamburger {
   width: 40px;
+  z-index: 1;
+
+  &.open img {
+    transition: all 0.3s ease-in-out;
+    transform: rotateZ(-180deg);
+  }
 }
