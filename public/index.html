@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,27 +28,155 @@
     <meta property="og:url" content="https://bitecope.com/">
     <meta property="og:image" content="https://bitecope.sigmanificient.com/svg/logo/logo__white_squre.svg">
     <meta property="og:site_name" content="Bite Cope"/>
-    <meta name="theme-color" content="#fe7624" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@500&family=Righteous&family=Nunito&display=swap"
           rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/svg/logo/logo__no_bg.svg">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="svg/logo/logo__no_bg.svg">
 </head>
 <body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
-<!--
-  This HTML file is a template.
-  If you open it directly in the browser, you will see an empty page.
+<header class="header">
+    <div class="header--container">
+        <a class="logo" href="#">
+            <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo">
+            Bitecope
+        </a>
 
-  You can add webfonts, meta tags, or analytics to this file.
-  The build step will place the bundled scripts into the <body> tag.
+        <a class="nav--link" href="index.html#">Home</a>
+        <a class="nav--link" href="index.html#about_us">About Us</a>
+        <a class="nav--link" href="Contact-us.html">Contact Us</a>
 
-  To begin the development, run `npm start` or `yarn start`.
-  To create a production bundle, use `npm run build` or `yarn build`.
--->
+        <nav id="menu" class="nav">
+            <img src="svg/cross-button.svg" alt="Close">
+
+            <a class="nav--link" href="T&C.html">T&C</a>
+            <a class="nav--link" href="FAQ.html">FAQ</a>
+            <a class="nav--link" href="PrivacyPolicy.html">Privacy Policy</a>
+        </nav>
+
+        <a id="hamburger" href="#" class="hamburger">
+            <img src="svg/button_hamburger.svg" alt="+">
+        </a>
+
+        <script>
+            window.onload = function() {
+                let hamburger = document.getElementById("hamburger")
+                let menu = document.getElementById("menu")
+
+                hamburger.onclick = function() {
+                    hamburger.classList.toggle('open')
+                    menu.classList.toggle('open')
+                }
+            }
+        </script>
+    </div>
+</header>
+<main class="main">
+    <section class="landing">
+        <section class="left">
+            <h1>Welcome to Bitecope!</h1>
+            <p>Manage purchase, inventory-stock, production, shipment effectively | Realtime
+                Updates | Scalable | Sustainable | Secure</p>
+        </section>
+        <section class="right">
+            <img src="svg/illustrations/1.svg" alt="">
+        </section>
+    </section>
+    <section id="about_us" class="about_us">
+        <h2>About Us!</h2>
+        <section class="illustrations">
+            <img src="svg/illustrations/2.svg" alt="">
+            <img src="svg/illustrations/3.svg" alt="">
+            <img src="svg/illustrations/4.svg" alt="">
+        </section>
+        <p>
+            Are you having a hard time coordinating with multiple departments in your business? Tired of dealing
+            with existing issues arising due to miscommunication across departments? With Bitecope, say no more!
+        </p>
+        <p>
+            Bitecope is one of a kind company which designs tools to be used by
+            the owner and employees of businesses, making the whole process hassle-free, coordinated and online.
+            We provide multi-channel accessibility through our mobile app and website.
+        </p>
+    </section>
+
+    <section class="perks">
+        <h2>Perks Of Using Bitecope</h2>
+        <section class="perks-wrapper">
+            <section class="card">
+                <p class="number_circle">01</p>
+                <p class="details">
+                    <b>Access to fully co-ordinated inventory management website containing real-time data.</b>
+                </p>
+            </section>
+            <section class="card">
+                <p class="number_circle">02</p>
+                <p class="details">
+                    <b>Access to mobile application for ordering the products in real-time.</b>
+                </p>
+            </section>
+            <section class="card">
+                <p class="number_circle">03</p>
+                <p class="details">
+                    <b>Quicker and accurate decision-making - from buying, to production and consumption.</b>
+                </p>
+            </section>
+            <section class="card">
+                <p class="number_circle">04</p>
+                <p class="details"><b>Less Wastage of products.</b></p>
+            </section>
+            <section class="card">
+                <p class="number_circle">05</p>
+                <p class="details"><b>Effective tracking of all products - expired, excess, shortage, sold etc.</b></p>
+            </section>
+            <section class="card">
+                <p class="number_circle">06</p>
+                <p class="details"><b>Effective cost-cutting and hence more profits.</b></p>
+            </section>
+            <section class="card">
+                <p class="number_circle">07</p>
+                <p class="details"><b>No delay in the whole process whatsoever.</b></p>
+            </section>
+        </section>
+    </section>
+
+    <section class="supply_chain">
+        <h2>Supply Chain the Bitecope Way!</h2>
+        <figure class="fig_supply_chain">
+            <figcaption class="step img-left">
+                <img class="img-left" src="svg/illustrations/arrow1.svg" alt="step 1">
+                <h3>the plan or strategy</h3>
+                <p>
+                    The supply chain manager tries to minimize shortages and keep costs down. The job is not only about
+                    logistics and purchasing inventory but also to improve productivity, quality, and efficiency of
+                    operations.
+                </p>
+            </figcaption>
+            <br>
+            <figcaption class="step">
+                <img class="img-right" src="svg/illustrations/arrow2.svg" alt="step 2">
+                <h3>The source of raw materials or service</h3>
+                <p>
+                    The owner can coordinate all the operations across departments and have an accurate idea of
+                    resources required, surplus, etc. based on the real-time demand.
+                </p>
+            </figcaption>
+            <br>
+            <figcaption class="step img-left">
+                <img class="img-left" src="svg/illustrations/arrow3.svg" alt="step 3">
+                <h3>delivery and logistics</h3>
+                <p>The Retailer Can Keep Track Of Goods Delivered, Not Delivered, Excess As Well As Expired Goods Making
+                    Warehouse Management Easier!
+                </p>
+            </figcaption>
+        </figure>
+    </section>
+</main>
+<footer>
+    <p>
+        All rights reserved ©2020 by Bitecope
+    </p>
+</footer>
 </body>
 </html>
