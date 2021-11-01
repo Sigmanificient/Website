@@ -48,14 +48,14 @@
         <a class="nav--link" href="Contact-us.html">Contact Us</a>
 
         <nav id="menu" class="nav">
-            <img src="svg/cross-button.svg" alt="Close">
+            <img id="closer" src="svg/cross-button.svg" alt="Close">
 
             <a class="nav--link" href="T&C.html">T&C</a>
             <a class="nav--link" href="FAQ.html">FAQ</a>
             <a class="nav--link" href="PrivacyPolicy.html">Privacy Policy</a>
         </nav>
 
-        <a id="hamburger" href="#" class="hamburger">
+        <a id="hamburger" class="hamburger">
             <img src="svg/button_hamburger.svg" alt="+">
         </a>
 
@@ -63,10 +63,17 @@
             window.onload = function() {
                 let hamburger = document.getElementById("hamburger")
                 let menu = document.getElementById("menu")
+                let closer = document.getElementById("closer")
 
                 hamburger.onclick = function() {
-                    hamburger.classList.toggle('open')
-                    menu.classList.toggle('open')
+                    hamburger.classList.add('open')
+                    menu.classList.add('open')
+                }
+
+
+                closer.onclick = function() {
+                    hamburger.classList.remove('open')
+                    menu.classList.remove('open')
                 }
             }
         </script>
