@@ -11,7 +11,7 @@ function Header() {
             <script>hamburger()</script>
             <header className="header">
                 <div className="header--container">
-                    <a className="logo" href="#">
+                    <a className="logo" href="/">
                         <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo"/>
                         Bitecope
                     </a>
@@ -33,9 +33,9 @@ function Header() {
                         <a className="nav--link" href="/privacy">Privacy Policy</a>
                     </nav>
 
-                    <a id="hamburger" className={navbarOpen ? 'hamburger open' : 'hamburger'} onClick={handleToggle}>
+                    <div id="hamburger" className={navbarOpen ? 'hamburger open' : 'hamburger'} onClick={handleToggle}>
                         <img src="svg/button_hamburger.svg" alt="+"/>
-                    </a>
+                    </div>
                 </div>
             </header>
         </React.Fragment>
