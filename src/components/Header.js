@@ -13,7 +13,7 @@ function Header() {
                     <a className="nav--link" href="#">Home</a>
                     <a className="nav--link" href="#about_us">About Us</a>
                     <a className="nav--link" href="#contact-us">Contact Us</a>
-                    <a className="nav--link" href="/T&C">T&C</a>
+                    <a className="nav--link" href="/t&c">T&C</a>
                     <a className="nav--link" href="/FAQ">FAQ</a>
                     <a className="nav--link" href="/PrivacyPolicy">Privacy Policy</a>
                 </nav>

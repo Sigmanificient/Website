@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Register from './components/register'
 import Login from './components/login'
 import Logout from './components/logout'
+import TandC from "./components/TandC";
 
 
 const routing =(<Router>
@@ -17,6 +18,8 @@ const routing =(<Router>
             <Route exact path='/register' component={Register}/>
             <Route exact path='/login' component={Login}/>
             <Route exact path='/logout' component={Logout}/>
+
+            <Route exact path='/t&c' component={TandC}/>
         </Switch>
         <Footer/>
     </React.StrictMode>
