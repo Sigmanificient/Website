@@ -18,14 +18,14 @@ function Header() {
 
                     <a className="nav--link" href="/">Home</a>
                     <a className="nav--link" href="/subscription">Subscription</a>
-                    <a className="nav--link" href="/#contact-us">Contact Us</a>
+                    <a className="nav--link" href="/contact">Contact Us</a>
 
                     <nav id="menu" className={navbarOpen ? 'nav open' : 'nav'}>
                         <img id="closer" src="svg/cross-button.svg" alt="Close" onClick={handleToggle}/>
 
                         <a className="nav--link responsive-nav" href="/">Home</a>
                         <a className="nav--link responsive-nav" href="/subscription">Subscription</a>
-                        <a className="nav--link responsive-nav" href="/#contact-us">Contact Us</a>
+                        <a className="nav--link responsive-nav" href="/contact">Contact Us</a>
 
                         <a className="nav--link" href="/#about_us">About Us</a>
                         <a className="nav--link" href="/t&c">T&C</a>

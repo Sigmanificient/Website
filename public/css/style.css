@@ -82,6 +82,10 @@ input {
   outline: 0;
 }
 
+img {
+  user-select: none;
+}
+
 body {
   font-size: clamp(10px, 1vw, 16px);
 }

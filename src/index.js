@@ -11,6 +11,7 @@ import TandC from "./components/TandC";
 import FAQ from "./components/FAQ";
 import Privacy from "./components/Privacy";
 import Subscription from "./components/Subscription";
+import Contact_us from "./components/Contact_us";
 
 
 const routing = (
@@ -27,6 +28,7 @@ const routing = (
                 <Route exact path='/faq' component={FAQ}/>
                 <Route exact path='/privacy' component={Privacy}/>
                 <Route exact path='/subscription' component={Subscription}/>
+                <Route exact path='/contact' component={Contact_us}/>
             </Switch>
             <Footer/>
         </React.StrictMode>
