@@ -42,14 +42,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Monofyi/Website.git"
-    },
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Monofyi/Website/issues"
-    },
-    "homepage": "https://github.com/Monofyi/Website#readme"
+    }
 }
