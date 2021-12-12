@@ -10,9 +10,10 @@ import Logout from './components/logout'
 import TandC from "./components/TandC";
 import FAQ from "./components/FAQ";
 import Privacy from "./components/Privacy";
+import Subscription from "./components/Subscription";
 
 
-const routing =(
+const routing = (
     <Router>
         <React.StrictMode>
             <Header/>
@@ -25,6 +26,7 @@ const routing =(
                 <Route exact path='/t&c' component={TandC}/>
                 <Route exact path='/faq' component={FAQ}/>
                 <Route exact path='/privacy' component={Privacy}/>
+                <Route exact path='/subscription' component={Subscription}/>
             </Switch>
             <Footer/>
         </React.StrictMode>
