@@ -11,15 +11,15 @@ function App() {
                     </p>
                 </section>
                 <section className="right">
-                    <img src="svg/illustrations/1.svg" alt="" />
+                    <img src="svg/illustrations/1.svg" alt=""/>
                 </section>
             </section>
             <section id="about_us" className="about_us">
                 <h2>About Us!</h2>
                 <section className="illustrations">
-                    <img src="svg/illustrations/2.svg" alt="" />
-                    <img src="svg/illustrations/3.svg" alt="" />
-                    <img src="svg/illustrations/4.svg" alt="" />
+                    <img src="svg/illustrations/2.svg" alt=""/>
+                    <img src="svg/illustrations/3.svg" alt=""/>
+                    <img src="svg/illustrations/4.svg" alt=""/>
                 </section>
                 <p>
                     Are you having a hard time coordinating with multiple departments in your business? Tired of dealing
@@ -59,8 +59,9 @@ function App() {
                     </section>
                     <section className="card">
                         <p className="number_circle">05</p>
-                        <p className="details"><b>Effective tracking of all products - expired, excess, shortage, sold
-                            etc.</b></p>
+                        <p className="details">
+                            <b>Effective tracking of all products - expired, excess, shortage, sold etc.</b>
+                        </p>
                     </section>
                     <section className="card">
                         <p className="number_circle">06</p>
@@ -81,10 +82,8 @@ function App() {
                         <h3>the plan or strategy</h3>
                         <p>
                             The supply chain manager tries to minimize shortages and keep costs down. The job is not
-                            only about
-                            logistics and purchasing inventory but also to improve productivity, quality, and
-                            efficiency of
-                            operations.
+                            only about logistics and purchasing inventory but also to improve productivity, quality, and
+                            efficiency of operations.
                         </p>
                     </figcaption>
                     <br/>
@@ -114,8 +113,7 @@ function App() {
                     <section className="left">
                         <p>
                             If you wish to know more or purchase our products, please leave your details here. Our team
-                            will
-                            assist you further.
+                            will assist you further.
                         </p>
                         <form id="form">
                             <section className="form-identity">
@@ -127,15 +125,16 @@ function App() {
                             </section>
 
                             <textarea name="message" id="message" placeholder="Your Message" required/>
-                            <input className="btn" type="submit" value="Submit" />
+                            <input className="btn" type="submit" value="Submit"/>
                         </form>
                     </section>
                     <section className="right">
-                        <img src="svg/illustrations/5.svg" alt="" />
+                        <img src="svg/illustrations/5.svg" alt=""/>
                     </section>
                 </section>
             </section>
         </main>
     );
 }
+
 export default App;
