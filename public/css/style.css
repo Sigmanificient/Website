@@ -48,6 +48,15 @@
     opacity: 1;
   }
 }
+@keyframes SlideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+}
 @keyframes Fade {
   0% {
     opacity: 0;
@@ -292,6 +301,7 @@ input::placeholder, textarea::placeholder {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .header--container {
+  user-select: none;
   margin: 0 auto;
   width: clamp(280px, 80%, 1360px);
   display: flex;
@@ -555,6 +565,7 @@ a.logo img {
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
   padding: 40px 40px 80px;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
 }
 .plans-container:hover {
   transform: translateY(-10px);
@@ -592,6 +603,18 @@ a.logo img {
 .plans .description {
   width: 100%;
   color: #AEAEAE;
+}
+
+#monthly {
+  animation: SlideUp 1s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
+}
+
+#annually {
+  animation: SlideUp 1s 0.3s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
+}
+
+#enterprise {
+  animation: SlideUp 1s 0.6s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
 }
 
 ::-webkit-scrollbar {

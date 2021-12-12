@@ -13,6 +13,7 @@
   background-color: rgba(abscracts.$color-bg, 80%);
 
   &--container {
+    user-select: none;
     margin: 0 auto;
     width: clamp(280px, 80%, 1360px);
     display: flex;
