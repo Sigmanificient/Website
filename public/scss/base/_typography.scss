@@ -69,7 +69,7 @@ ol {
   font-size: 1.2em;
 }
 
-h1, h2, h3, p, a, img, textarea, input, ol {
+h1, h2, h3, p, a, img, textarea, input, ol, strong, sub, h6, b {
   &::selection {
     background-color: abscracts.$action-color;
   }

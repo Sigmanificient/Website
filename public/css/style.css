@@ -147,7 +147,7 @@ ol {
   font-size: 1.2em;
 }
 
-h1::selection, h2::selection, h3::selection, p::selection, a::selection, img::selection, textarea::selection, input::selection, ol::selection {
+h1::selection, h2::selection, h3::selection, p::selection, a::selection, img::selection, textarea::selection, input::selection, ol::selection, strong::selection, sub::selection, h6::selection, b::selection {
   background-color: #fe7624;
 }
 
@@ -528,6 +528,11 @@ a.logo img {
   padding-left: 50px;
 }
 
+@media (max-width: 980px) {
+  .supply_chain {
+    display: none;
+  }
+}
 .plans {
   display: flex;
   gap: 60px;

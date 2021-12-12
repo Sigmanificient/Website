@@ -18,5 +18,13 @@
 
 .img-right {
   float: right;
-  padding-left:50px;
+  padding-left: 50px;
+}
+
+// This is a quick fix for the supply chain section caused the whole page to overflow.
+// Temporary fix until responsive design is implemented.
+@media (max-width: 980px) {
+  .supply_chain {
+    display: none;
+  }
 }
