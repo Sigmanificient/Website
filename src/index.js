@@ -8,22 +8,26 @@ import Register from './components/register'
 import Login from './components/login'
 import Logout from './components/logout'
 import TandC from "./components/TandC";
+import FAQ from "./components/FAQ";
 
 
-const routing =(<Router>
-    <React.StrictMode>
-        <Header/>
-        <Switch>
-            <Route exact path='/' component={App}/>
-            <Route exact path='/register' component={Register}/>
-            <Route exact path='/login' component={Login}/>
-            <Route exact path='/logout' component={Logout}/>
+const routing =(
+    <Router>
+        <React.StrictMode>
+            <Header/>
+            <Switch>
+                <Route exact path='/' component={App}/>
+                <Route exact path='/register' component={Register}/>
+                <Route exact path='/login' component={Login}/>
+                <Route exact path='/logout' component={Logout}/>
 
-            <Route exact path='/t&c' component={TandC}/>
-        </Switch>
-        <Footer/>
-    </React.StrictMode>
-</Router>);
+                <Route exact path='/t&c' component={TandC}/>
+                <Route exact path='/faq' component={FAQ}/>
+            </Switch>
+            <Footer/>
+        </React.StrictMode>
+    </Router>
+);
 
 
 ReactDOM.render(routing,
