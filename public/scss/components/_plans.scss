@@ -1,0 +1,68 @@
+@use "../abscracts";
+
+
+.plans {
+  display: flex;
+
+  @media (max-width: 1200px) {
+    flex-flow: row wrap;
+  }
+
+  gap: 60px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
+    padding: 40px 40px 80px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.25), -0.1px 0.1px 89px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .benefits, .descriptions {
+    display: grid;
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 80px;
+    gap: 20px;
+  }
+
+  .benefit > img {
+    height: 20px;
+  }
+
+  .price {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+
+    strong {
+      font-weight: bold;
+      font-size: 2em;
+    }
+  }
+
+  .time_range {
+    font-size: 2em;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .description {
+    width: 100%;
+    color: #AEAEAE;
+  }
+}
