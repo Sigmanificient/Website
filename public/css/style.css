@@ -50,10 +50,9 @@
 }
 @keyframes SlideUp {
   0% {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   100% {
-    transform: translateY(-10%);
     opacity: 1;
   }
 }
@@ -564,11 +563,13 @@ a.logo img {
   width: 100%;
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
   padding: 40px 40px 80px;
+  transform: translateY(0);
   transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 .plans-container:hover {
   transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.25), -0.1px 0.1px 89px rgba(0, 0, 0, 0.1);
 }
 .plans-container p {
