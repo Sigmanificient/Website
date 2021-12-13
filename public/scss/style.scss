@@ -1,0 +1,9 @@
+@use "abscracts";
+@use "base";
+@use "components";
+@use "layout";
+
+footer p {
+  text-align: center;
+  font-weight: 700;
+}

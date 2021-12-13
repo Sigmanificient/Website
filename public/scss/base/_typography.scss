@@ -1,0 +1,89 @@
+@use "../abscracts";
+
+body {
+  font-size: clamp(10px, 1vw, 16px);
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+
+  &.logo {
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+  }
+}
+
+h1 {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+}
+
+h2 {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+
+  &.small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+}
+
+h3 {
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+p {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+
+  &.number_circle {
+    padding: 10px;
+    font-family: 'Righteous', fantasy;
+    font-size: 5.8em;
+    font-weight: 800;
+  }
+
+  &.ultra-big {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+  }
+}
+
+ol {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, p, a, img, textarea, input, ol, strong, sub, h6, b {
+  &::selection {
+    background-color: abscracts.$action-color;
+  }
+}
+
+input, textarea {
+  font-size: 1em;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+.dev-name {
+  font-size: 1.11em;
+}

@@ -1,90 +1,45 @@
-import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { makeStyles } from "@material-ui/core/styles";
-import { NavLink } from "react-router-dom";
-import Link from "@material-ui/core/Link";
-import Button from "@material-ui/core/Button";
-
-const useStyles = makeStyles((theme) => ({
-  appBar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  link: {
-    margin: theme.spacing(1, 1.5),
-  },
-  toolbarTitle: {
-    flexGrow: 1,
-  },
-}));
+import React, {useState} from "react"
 
 function Header() {
-  const classes = useStyles();
-  return (
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        className={classes.appBar}
-      >
-        <Toolbar className={classes.toolbar}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            className={classes.toolbarTitle}
-          >
-            <Link
-              component={NavLink}
-              to="/"
-              underline="none"
-              color="textPrimary"
-            >
-              <img
-                style={{ width: "50px", height: "50px" }}
-                src="https://bitecope.com/img/Bitecope_dark.png"
-                alt="Bitecope"
-              />
-            </Link>
-          </Typography>
-          <Button
-            href="#"
-            color="primary"
-            variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/register"
-          >
-            Register
-          </Button>
-          <Button
-            href="#"
-            color="primary"
-            variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/login"
-          >
-            Login
-          </Button>
-          <Button
-            href="#"
-            color="primary"
-            variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/logout"
-          >
-            Logout
-          </Button>
-        </Toolbar>
-      </AppBar>
-    </React.Fragment>
-  );
+    const [navbarOpen, setNavbarOpen] = useState(false)
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
+    }
+
+    return (
+        <React.Fragment>
+            <script>hamburger()</script>
+            <header className="header">
+                <div className="header--container">
+                    <a className="logo" href="/">
+                        <img src="svg/logo/logo__no_bg.svg" alt="Bite Cope Startup logo"/>
+                        Bitecope
+                    </a>
+
+                    <a className="nav--link" href="/">Home</a>
+                    <a className="nav--link" href="/subscription">Subscription</a>
+                    <a className="nav--link" href="/contact">Contact Us</a>
+
+                    <nav id="menu" className={navbarOpen ? 'nav open' : 'nav'}>
+                        <img id="closer" src="svg/cross-button.svg" alt="Close" onClick={handleToggle}/>
+
+                        <a className="nav--link responsive-nav" href="/">Home</a>
+                        <a className="nav--link responsive-nav" href="/subscription">Subscription</a>
+                        <a className="nav--link responsive-nav" href="/contact">Contact Us</a>
+
+                        <a className="nav--link" href="/#about_us">About Us</a>
+                        <a className="nav--link" href="/t&c">T&C</a>
+                        <a className="nav--link" href="/faq">FAQ</a>
+                        <a className="nav--link" href="/privacy">Privacy Policy</a>
+                    </nav>
+
+                    <div id="hamburger" className={navbarOpen ? 'hamburger open' : 'hamburger'} onClick={handleToggle}>
+                        <img src="svg/button_hamburger.svg" alt="+"/>
+                    </div>
+                </div>
+            </header>
+        </React.Fragment>
+    );
 }
 
 export default Header;
