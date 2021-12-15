@@ -1,33 +1,31 @@
 .supply_chain {
+
+  &__fig {
+    display: grid;
+    gap: 40px;
+  }
+
   h2 {
     text-align: center;
   }
 
   .step {
+    display: flex;
+    gap: 20px;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
     img {
       min-height: 180px;
       width: auto;
+      max-width: 33%;
     }
   }
 }
 
-.img-left {
-  float: left;
-  padding-right: 50px;
-}
-
-.img-right {
-  float: right;
-  padding-left: 50px;
-}
-
-.supply_chain img {
-  max-width: 25vw;
-}
-
-// This is a quick fix for the supply chain section caused the whole page to overflow.
-// Temporary fix until responsive design is implemented.
-@media (max-width: 980px) {
+@media (max-width: 660px) {
   .supply_chain img {
     display: none;
   }

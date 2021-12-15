@@ -76,34 +76,39 @@ function App() {
 
             <section className="supply_chain">
                 <h2>Supply Chain the Bitecope Way!</h2>
-                <figure className="fig_supply_chain">
-                    <figcaption className="step img-left">
+                <figure className="supply_chain__fig">
+                    <figcaption className="step">
                         <img className="img-left" src="svg/illustrations/arrow1.svg" alt="step 1"/>
-                        <h3>the plan or strategy</h3>
-                        <p>
-                            The supply chain manager tries to minimize shortages and keep costs down. The job is not
-                            only about logistics and purchasing inventory but also to improve productivity, quality, and
-                            efficiency of operations.
-                        </p>
+                        <div>
+                            <h3>the plan or strategy</h3>
+                            <p>
+                                The supply chain manager tries to minimize shortages and keep costs down. The job is not
+                                only about logistics and purchasing inventory but also to improve productivity, quality, and
+                                efficiency of operations.
+                            </p>
+                        </div>
                     </figcaption>
-                    <br/>
                     <figcaption className="step">
                         <img className="img-right" src="svg/illustrations/arrow2.svg" alt="step 2"/>
-                        <h3>The source of raw materials or service</h3>
-                        <p>
-                            The owner can coordinate all the operations across departments and have an accurate
-                            idea of
-                            resources required, surplus, etc. based on the real-time demand.
-                        </p>
+                        <div>
+                            <h3>The source of raw materials or service</h3>
+                            <p>
+                                The owner can coordinate all the operations across departments and have an accurate
+                                idea of
+                                resources required, surplus, etc. based on the real-time demand.
+                            </p>
+                        </div>
+
                     </figcaption>
-                    <br/>
-                    <figcaption className="step img-left">
+                    <figcaption className="step">
                         <img className="img-left" src="svg/illustrations/arrow3.svg" alt="step 3"/>
-                        <h3>delivery and logistics</h3>
-                        <p>The Retailer Can Keep Track Of Goods Delivered, Not Delivered, Excess As Well As
-                            Expired Goods Making
-                            Warehouse Management Easier!
-                        </p>
+                        <div>
+                            <h3>delivery and logistics</h3>
+                            <p>The Retailer Can Keep Track Of Goods Delivered, Not Delivered, Excess As Well As
+                                Expired Goods Making
+                                Warehouse Management Easier!
+                            </p>
+                        </div>
                     </figcaption>
                 </figure>
             </section>
