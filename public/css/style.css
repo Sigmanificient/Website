@@ -50,10 +50,9 @@
 }
 @keyframes SlideUp {
   0% {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   100% {
-    transform: translateY(-10%);
     opacity: 1;
   }
 }
@@ -301,6 +300,7 @@ input::placeholder, textarea::placeholder {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .header--container {
+  user-select: none;
   margin: 0 auto;
   width: clamp(280px, 80%, 1360px);
   display: flex;
@@ -339,7 +339,7 @@ a.logo img {
   display: none;
   position: relative;
   z-index: 1;
-  animation: SlideRight 1s cubic-bezier(0.42, 0, 0.12, 1.34);
+  animation: SlideRight 1s linear;
 }
 @media (min-width: 768px) {
   .nav#menu > .responsive-nav {
@@ -523,26 +523,28 @@ a.logo img {
     text-align: left;
   }
 }
+.supply_chain__fig {
+  display: grid;
+  gap: 40px;
+}
 .supply_chain h2 {
   text-align: center;
+}
+.supply_chain .step {
+  display: flex;
+  gap: 20px;
+}
+.supply_chain .step:nth-child(2n) {
+  flex-direction: row-reverse;
 }
 .supply_chain .step img {
   min-height: 180px;
   width: auto;
+  max-width: 33%;
 }
 
-.img-left {
-  float: left;
-  padding-right: 50px;
-}
-
-.img-right {
-  float: right;
-  padding-left: 50px;
-}
-
-@media (max-width: 980px) {
-  .supply_chain {
+@media (max-width: 660px) {
+  .supply_chain img {
     display: none;
   }
 }
@@ -564,9 +566,11 @@ a.logo img {
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.08), -0.1px 0.1px 89px rgba(0, 0, 0, 0.01);
   padding: 40px 40px 80px;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
 }
 .plans-container:hover {
   transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
   box-shadow: 0.1px -0.1px 21px rgba(0, 0, 0, 0.25), -0.1px 0.1px 89px rgba(0, 0, 0, 0.1);
 }
 .plans-container p {
@@ -601,6 +605,18 @@ a.logo img {
 .plans .description {
   width: 100%;
   color: #AEAEAE;
+}
+
+#monthly {
+  animation: SlideUp 1s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
+}
+
+#annually {
+  animation: SlideUp 1s 0.3s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
+}
+
+#enterprise {
+  animation: SlideUp 1s 0.6s cubic-bezier(0.17, -0.4, 0, 1.72) forwards;
 }
 
 ::-webkit-scrollbar {
