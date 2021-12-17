@@ -13,6 +13,7 @@
   background-color: rgba(abscracts.$color-bg, 80%);
 
   &--container {
+    user-select: none;
     margin: 0 auto;
     width: clamp(280px, 80%, 1360px);
     display: flex;
@@ -21,7 +22,7 @@
     gap: 10px;
 
     @media (max-width: 767px) {
-      &>.nav--link {
+      & > .nav--link {
         display: none;
         padding-right: 0;
       }
@@ -57,10 +58,10 @@ a.logo {
   position: relative;
   z-index: 1;
 
-  animation: SlideRight 1s cubic-bezier(0.42, 0, 0.12, 1.34);
+  animation: SlideRight 1s linear;
 
   @media (min-width: 768px) {
-    &>.responsive-nav {
+    & > .responsive-nav {
       display: none;
     }
   }

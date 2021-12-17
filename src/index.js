@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
-import App from './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Register from './components/register'
@@ -12,6 +11,7 @@ import FAQ from "./components/FAQ";
 import Privacy from "./components/Privacy";
 import Subscription from "./components/Subscription";
 import Contact_us from "./components/Contact_us";
+import Homepage from "./components/Homepage";
 
 
 const routing = (
@@ -19,7 +19,7 @@ const routing = (
         <React.StrictMode>
             <Header/>
             <Switch>
-                <Route exact path='/' component={App}/>
+                <Route exact path='/' component={Homepage}/>
                 <Route exact path='/register' component={Register}/>
                 <Route exact path='/login' component={Login}/>
                 <Route exact path='/logout' component={Logout}/>
